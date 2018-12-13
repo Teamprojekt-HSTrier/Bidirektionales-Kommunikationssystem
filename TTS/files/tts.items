@@ -1,0 +1,2 @@
+Switch ReadSMS "TTS" <switch> [ "Switchable" ] { channel="exec:command:tts:run"}
+String ReadSMScommand { channel="exec:command:tts:input"}

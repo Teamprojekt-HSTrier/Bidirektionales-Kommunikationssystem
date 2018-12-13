@@ -1,0 +1,1 @@
+Thing exec:command:stt [command="/home/pi/STT/aufnahme.sh %2$s", interval=-1, timeout=0, autorun=true]

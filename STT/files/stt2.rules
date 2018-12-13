@@ -1,0 +1,10 @@
+rule "SEND MESSAGE"
+        when
+			Item ZWaveNode8FGS222DoubleRelaySwitch2x15kW_Switch1 changed    
+        then
+			if (ZWaveNode8FGS222DoubleRelaySwitch2x15kW_Switch1.state == ON ) {
+				var formatted = transform("EXEC","/home/pi/STT/aufnahme.sh START", YourTriggeringItem.state.toString)
+			}else{
+				var formatted = transform("EXEC","/home/pi/STT/aufnahme.sh STOP", YourTriggeringItem.state.toString)
+			}
+end

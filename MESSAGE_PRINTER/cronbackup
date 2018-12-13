@@ -1,0 +1,1 @@
+@reboot /bin/bash /home/pi/MESSAGE_PRINTER/runGetmail.sh > /tmp/log 2>&1

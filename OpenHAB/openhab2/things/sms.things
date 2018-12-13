@@ -1,0 +1,1 @@
+Thing exec:command:sms [command="/home/pi/OPENHAB/lampesms.sh", interval=60, timeout=15, autorun=true]

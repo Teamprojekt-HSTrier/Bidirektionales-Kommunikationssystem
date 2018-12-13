@@ -1,0 +1,3 @@
+Number ReceivedSMSLampe "SMS_Received" { channel="exec:command:sms:exit"}
+Switch SwitchSMSLampe "SMS Checken" <switch> [ "Switchable" ] { channel="exec:command:sms:run"}
+DateTime LastCheckSMSLampe "Last SMS Check" { channel="exec:command:sms:lastexecution"}

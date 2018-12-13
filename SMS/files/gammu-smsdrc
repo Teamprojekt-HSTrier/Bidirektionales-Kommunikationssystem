@@ -1,0 +1,26 @@
+# Configuration file for Gammu SMS Daemon
+# Gammu library configuration, see gammurc(5)
+[gammu]
+# Please configure this!
+port = /dev/ttyUSB2
+name = Huawei
+connection = at
+use_locking = yes
+# Debugging
+logformat = textalldate
+# SMSD configuration, see gammu-smsdrc(5)
+[smsd]
+pin = 
+service = files
+#logfile = syslog
+logfile = /var/log/gammu-smsd
+# Increase for debugging information
+debuglevel = 0
+ReceiveFrequency = 30
+# Paths where messages are stored
+inboxpath = /var/spool/gammu/inbox/
+outboxpath = /var/spool/gammu/outbox/
+sentsmspath = /var/spool/gammu/sent/
+errorsmspath = /var/spool/gammu/error/
+# process incoming messages
+RunOnReceive = /home/pi/SMS/readsms.sh

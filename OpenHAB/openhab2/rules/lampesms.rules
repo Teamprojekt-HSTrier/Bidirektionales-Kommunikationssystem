@@ -1,0 +1,10 @@
+rule "Received SMS"
+        when
+		Item ReceivedSMSLampe received update
+            
+        then
+        if (ReceivedSMSLampe.state==1 ) {
+		sendCommand(,ON)
+           }
+
+end

@@ -1,0 +1,2 @@
+Switch SENDMESSAGE "SENDMESSAGE" <switch> [ "Switchable" ] { channel="exec:command:stt:run"}
+String SENDMESSAGEcommand { channel="exec:command:stt:input"}

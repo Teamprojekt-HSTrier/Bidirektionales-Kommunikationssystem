@@ -1,0 +1,1 @@
+Thing exec:command:mail [command="/home/pi/OPENHAB/lampemail.sh", interval=60, timeout=15, autorun=true]

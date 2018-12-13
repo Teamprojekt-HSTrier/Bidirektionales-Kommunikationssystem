@@ -1,0 +1,8 @@
+[gammu]
+device = /dev/ttyUSB2
+name = Huawei
+connection = at
+use_locking = yes
+logfile = gammu.log
+logformat = textalldate
+

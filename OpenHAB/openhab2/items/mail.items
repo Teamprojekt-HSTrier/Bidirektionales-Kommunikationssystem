@@ -1,0 +1,3 @@
+Number ReceivedMailLampe "Mail Received" { channel="exec:command:mail:exit"}
+Switch SwitchMailLampe "Mail Checken" <switch> [ "Switchable" ] { channel="exec:command:mail:run"}
+DateTime LastCheckMailLampe "Last Mail Check" { channel="exec:command:mail:lastexecution"}

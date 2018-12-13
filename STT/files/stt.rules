@@ -1,0 +1,10 @@
+rule "SEND MESSAGE"
+        when
+			Item Schalter changed    
+        then
+			if (Schalter.state == ON ) {
+				SENDMESSAGEcommand.sendCommand("START")
+			}else{
+				SENDMESSAGEcommand.sendCommand("STOP")	
+			}
+end

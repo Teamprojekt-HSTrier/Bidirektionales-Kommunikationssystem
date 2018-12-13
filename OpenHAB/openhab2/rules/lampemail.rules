@@ -1,0 +1,10 @@
+rule "Received Mail"
+        when
+		Item ReceivedMailLampe received update
+            
+        then
+        if (ReceivedMailLampe.state==1 ) {
+		sendCommand(,ON)
+           }
+
+end

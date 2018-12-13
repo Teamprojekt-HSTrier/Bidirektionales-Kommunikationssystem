@@ -1,0 +1,31 @@
+rule "SEND MESSAGE"
+        when
+			Item Schalter changed    
+        then
+			if (Schalter.state == ON ) {
+				ReadSMScommand.sendCommand("START")
+			}else{
+				ReadSMScommand.sendCommand("STOP")	
+			}
+end
+rule "LAMPE OFF 1"
+        when
+                        Item Schalter changed
+        then
+                        if (Schalter.state == ON ) {
+                                sendCommand(mail,OFF)
+                        }else{
+                                sendCommand(mail,OFF)
+                        }
+end
+rule "LAMPE OFF 2"
+        when
+                        Item Schalter changed
+        then
+                        if (Schalter.state == ON ) {
+                                sendCommand(sms,OFF)
+                        }else{
+                                sendCommand(sms,OFF)
+                        }
+end
+

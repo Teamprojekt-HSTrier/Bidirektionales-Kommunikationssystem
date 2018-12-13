@@ -1,0 +1,23 @@
+[retriever]
+type = SimpleIMAPSSLRetriever
+server = imap.gmail.com
+mailboxes = ("Inbox",)
+username = teamfmf.hstrier@gmail.com
+password = Teamfmf!1
+
+[destination]
+type = MDA_external
+path = $PWD/printerMDA.sh
+
+[options]
+verbose = 2
+message_log = ""
+#message_log = $PWD/getmaildir/log
+
+# do not alter messages
+delivered_to = false
+received = false
+
+# retrieve only new messages
+# if set to true it will re-download ALL messages every time!
+read_all = false
