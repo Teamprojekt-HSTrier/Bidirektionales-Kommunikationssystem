@@ -43,7 +43,7 @@ fi
 #Einlesen der Zugangsdaten von E-Mail Konto, welches zum Empfangen benutzt wird.
 if [ -z $MAIL_ACC ]
 then
-echo -e "${farbcode}Bitte geben Sie die E-Mail-Adresse ein, von welcher die Nachrichten ausgedruckt werden sollen, bestaetigen Sie mit Enter:${neutral}"
+echo -e "${farbcode}Bitte geben Sie die E-Mail-Adresse ein, von welcher die Nachrichten ausgedruckt oder Vorgelesen werden sollen, bestaetigen Sie mit Enter:${neutral}"
 
 read MAIL_ACC
 fi
