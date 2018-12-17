@@ -1,7 +1,7 @@
 #!/bin/bash
 #installation der benötigten Komponenten für STT
 cat ./files/split-SpeechRecognition.tar.* > ./files/SpeechRecognition.tar 
-tar -xf ./files/SpeechRecognition.tar 
+tar -xzf ./files/SpeechRecognition.tar -C ./files/
 sudo apt-get -y install python-pyaudio python3-pyaudio flac
 sudo pip install google-api-python-client
 sudo pip install ./files/SpeechRecognition-3.8.1-py2.py3-none-any.whl
