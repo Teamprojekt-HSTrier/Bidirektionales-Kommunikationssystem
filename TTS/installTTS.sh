@@ -107,9 +107,9 @@ echo 1 > /home/pi/OPENHAB/lampemail.txt 2> /dev/null"
 #Sollte die Lampen Funktion schon installiert sein, so wird diese Zeile wieder ans ende geschrieben.
 if [ "$search" != "echo 1 > /home/pi/OPENHAB/lampemail.txt 2> /dev/null" ]
 then
-cp /home/pi/TTS/printerMDA.sh /home/pi/MESSAGE_PRINTER/printerMDA.sh
+sudo cp /home/pi/TTS/printerMDA.sh /home/pi/MESSAGE_PRINTER/printerMDA.sh
 else
-cp /home/pi/TTS/printerMDA.sh /home/pi/MESSAGE_PRINTER/printerMDA.sh
+sudo cp /home/pi/TTS/printerMDA.sh /home/pi/MESSAGE_PRINTER/printerMDA.sh
 echo "$text" >> /home/pi/MESSAGE_PRINTER/printerMDA.sh
 fi
 

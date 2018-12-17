@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sudo chmod 777 -R .
 export farbcode="\033[32m"
 export neutral="\033[0m"
 while [ true ]
