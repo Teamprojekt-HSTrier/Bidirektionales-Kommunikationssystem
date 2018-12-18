@@ -22,7 +22,7 @@ fi
 #Auslesen des zu letzt gedrückten Schalters in Openhab
 if [ -z "$OPENHAB_TTS" ]
 then
-zeilen=$(tail -n 2 /var/log/openhab2/events.log | grep ome.event.ItemCommandEvent)
+zeilen=$(tail -n 3 /var/log/openhab2/events.log | grep ome.event.ItemCommandEvent)
 zeilen=$(echo $zeilen| cut -d'-' -f 4)
 zeilen=$(echo $zeilen| cut -d' ' -f 2)
 zeilen="$(echo -e "${zeilen}" | tr -d '[:space:]')"

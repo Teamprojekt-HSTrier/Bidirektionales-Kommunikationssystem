@@ -1,8 +1,8 @@
 #!/bin/bash
 #installation der benötigten Komponenten für den Drucker
 echo "Entferne wolfram alpha..."
-sudo apt-get purge wolfram
-sudo apt-get purge wolfram-engine
+sudo apt-get -y purge wolfram
+sudo apt-get -y purge wolfram-engine
 echo "Installiere Abhaengigkeiten, bitte warten..."
 sudo apt-get -y install wkhtmltopdf cups libcups2-dev libcupsimage2-dev system-config-printer imagemagick xvfb
 
