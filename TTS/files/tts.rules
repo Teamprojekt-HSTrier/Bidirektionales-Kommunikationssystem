@@ -3,9 +3,9 @@ rule "SEND MESSAGE"
 			Item Schalter changed    
         then
 			if (Schalter.state == ON ) {
-				ReadSMScommand.sendCommand("START")
+				sendCommand(ReadSMScommand,"START")
 			}else{
-				ReadSMScommand.sendCommand("STOP")	
+				sendCommand(ReadSMScommand,"STOP")	
 			}
 end
 rule "LAMPE OFF 1"

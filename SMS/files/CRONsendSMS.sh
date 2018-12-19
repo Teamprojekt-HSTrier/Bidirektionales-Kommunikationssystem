@@ -16,7 +16,7 @@ counter="$(wc -l /home/pi/STT/KontakteSMS.txt | cut -d' ' -f 1)"
 for ((i=1;i<=$counter;++i)); do 
    SMSnr="$(head -n $i /home/pi/STT/KontakteSMS.txt | tail -n 1)"
    SMSnr="$(echo -e "${SMSnr}" | tr -d '[:space:]')"
-   sudo gammu-smsd-inject TEXT $SMSnr -text $sms
+   sudo gammu-smsd-inject TEXT $SMSnr -text "$sms"
 done
 
 #Zu letzt wird die SMS datei gelöscht und dann 10s gewartet.

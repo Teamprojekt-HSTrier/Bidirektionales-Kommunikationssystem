@@ -3,8 +3,8 @@ rule "SEND MESSAGE"
 			Item Schalter changed    
         then
 			if (Schalter.state == ON ) {
-				SENDMESSAGEcommand.sendCommand("START")
+				sendCommand(SENDMESSAGEcommand,"START")
 			}else{
-				SENDMESSAGEcommand.sendCommand("STOP")	
+				sendCommand(SENDMESSAGEcommand,"STOP")	
 			}
 end
