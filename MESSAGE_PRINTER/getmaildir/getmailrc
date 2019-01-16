@@ -2,8 +2,8 @@
 type = SimpleIMAPSSLRetriever
 server = imap.gmail.com
 mailboxes = ("Inbox",)
-username = teamfmf.hstrier@gmail.com
-password = Teamfmf!1
+username = max.mustermann@gmail.com
+password = musterpasswort
 
 [destination]
 type = MDA_external
